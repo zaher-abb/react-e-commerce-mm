@@ -155,6 +155,7 @@ const useStore = () => {
   const clearCart = () => {
     dispatch({ type: actions.CLEAR_CART });
   };
+  // https://3o4e7mvkld.execute-api.us-east-1.amazonaws.com/Prod/Product/all
   const getProducts = () => {
     fetch("https://3o4e7mvkld.execute-api.us-east-1.amazonaws.com/Prod/Product/all")
       .then(async (response) => {
