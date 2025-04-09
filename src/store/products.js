@@ -156,7 +156,7 @@ const useStore = () => {
     dispatch({ type: actions.CLEAR_CART });
   };
   const getProducts = () => {
-    fetch(`${import.meta.env.VITE_API_URL}/get-products`)
+    fetch("https://3o4e7mvkld.execute-api.us-east-1.amazonaws.com/Prod/Product/all")
       .then(async (response) => {
         const data = await response.json();
         let modifiedData = data.map((product) => {
