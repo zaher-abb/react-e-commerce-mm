@@ -15,7 +15,7 @@ const Product = ({ product }) => {
     <div className="product-container">
       <div className="image">
         <img
-          src={product?.product_image || headphones_pink}
+          src={product?.product_image || "https://s3.eu-west-1.amazonaws.com/zahzouh.de/20220211142754-margherita-9920_5a73220e-4a1a-4d33-b38f-26e98e3cd986.jpg"}
           alt="Product Image"
           width={"100%"}
         />
